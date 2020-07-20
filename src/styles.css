@@ -1,0 +1,1085 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+@import "~angular-notifier/styles.css";
+body {
+  background: whitesmoke;
+  padding-top: 4.5rem;
+}
+
+@font-face {
+  font-family: SSTArabic-Light;
+  src: url("assets/fonts/SSTArabic-Light.ttf");
+}
+
+@font-face {
+  font-family: SSTArabic-Bold;
+  src: url("assets/fonts/SSTArabic-Bold.ttf");
+}
+
+@font-face {
+  font-family: SSTArabic-Medium;
+  src: url("assets/fonts/SSTArabic-Medium.ttf");
+}
+
+@font-face {
+  font-family: SSTArabic-Roman;
+  src: url("assets/fonts/SSTArabic-Roman.ttf");
+}
+
+*:focus {
+  outline: none !important;
+  border: 0 !important;
+}
+
+.invalid-feedback {
+  display: block !important;
+  margin-left: 10px;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 12px;
+  color: #dc3545;
+  text-align: justify;
+}
+
+/* * {
+  font-family: SSTArabic-Bold !important;
+  font-family: SSTArabic-Medium !important;
+  font-family: SSTArabic-Light !important;
+  font-family: SSTArabic-Roman !important;
+} */
+
+.alignleft {
+  margin-top: 15px;
+  margin-left: 40px;
+  float: left;
+}
+.alignright {
+  margin-top: 15px;
+  margin-right: 40px;
+  float: right;
+}
+
+.cardBackgrnd {
+  background-image: url("assets/images/3@2x.png");
+  background-position: center;
+}
+
+.cardBackgrnd1 {
+  background-image: url("assets/images/4@2x.png");
+  background-position: center;
+}
+
+/* Common css */
+
+.Rectangle-12 {
+  height: 1px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.sideHeading {
+  font-family: SSTArabic-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: start;
+  color: #13614c;
+}
+
+.ellipse {
+  width: 34.5px;
+  height: 34.5px;
+  border-radius: 50%;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+.mat-slider.mat-slider-horizontal .mat-slider-wrapper {
+  top: 18px;
+}
+.mat-slider.mat-slider-horizontal .mat-slider-track-wrapper {
+  height: 9px;
+  border-radius: 5px;
+}
+.mat-slider.mat-slider-horizontal .mat-slider-track-background,
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  height: 100%;
+}
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  background-color: #13614c;
+}
+.mat-accent .mat-slider-thumb {
+  height: 41px;
+  width: 41px;
+  background: #f5f5f5 !important;
+  background-color: #f5f5f5 !important;
+  border: solid 2px gray;
+  bottom: -25px;
+  right: -20px;
+  border-radius: 8px;
+}
+.mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+  background-color: white;
+}
+
+.sliderTxt {
+  font-family: SSTArabic-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: normal;
+}
+
+.ellipse-inner {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #d2a02a;
+  position: relative;
+  top: 6px;
+  left: 4px;
+}
+
+.stepperIcon {
+  color: #13614c;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-size: 27px;
+}
+
+.stepperArbIcon {
+  color: #13614c;
+  position: relative;
+  bottom: -2px;
+  right: 0px;
+}
+
+.sideheaderIcon {
+  color: #00e695;
+  position: relative;
+  top: 10px;
+  float: right;
+}
+
+.sideheaderArIcon {
+  color: #00e695;
+  position: relative;
+  top: 10px;
+  float: left;
+}
+
+.pwdScreenCss {
+  margin-bottom: 0px;
+}
+
+.pwdArbScreenCss {
+  float: right;
+  margin-bottom: 0px;
+}
+
+.ackArbCss {
+  float: right;
+}
+
+.rowCss {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.ackScreenIcon {
+  font-size: 70px;
+  color: #00e695;
+}
+
+.ackScreenTitle {
+  font-family: SSTArabic-Bold;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #13614c;
+}
+.ackScreenTitle2 {
+  font-family: SSTArabic-Medium;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: normal;
+  color: #100f0f;
+}
+
+.ackScreenBox {
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 15px;
+  border: dashed 1px #707070;
+}
+
+.ackScreenBox2 {
+  font-family: SSTArabic-Medium;
+  position: relative;
+  top: 7px;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.ackScreenBox2Ar {
+  font-family: SSTArabic-Medium;
+  position: relative;
+  top: 7px;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.ackScreenTiles {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 20px;
+}
+
+.ackScreenSecondTitle {
+  font-family: SSTArabic-Light;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  color: #000000;
+  letter-spacing: normal;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+html[dir="rtl"] .row > .col-xs-1,
+html[dir="rtl"] .row > .col-xs-2,
+html[dir="rtl"] .row > .col-xs-3,
+html[dir="rtl"] .row > .col-xs-4,
+html[dir="rtl"] .row > .col-xs-5,
+html[dir="rtl"] .row > .col-xs-6,
+html[dir="rtl"] .row > .col-xs-7,
+html[dir="rtl"] .row > .col-xs-8,
+html[dir="rtl"] .row > .col-xs-9,
+html[dir="rtl"] .row > .col-xs-10,
+html[dir="rtl"] .row > .col-xs-11,
+html[dir="rtl"] .row > .col-xs-12 {
+  float: right;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .row > .col-sm-1,
+  html[dir="rtl"] .row > .col-sm-2,
+  html[dir="rtl"] .row > .col-sm-3,
+  html[dir="rtl"] .row > .col-sm-4,
+  html[dir="rtl"] .row > .col-sm-5,
+  html[dir="rtl"] .row > .col-sm-6,
+  html[dir="rtl"] .row > .col-sm-7,
+  html[dir="rtl"] .row > .col-sm-8,
+  html[dir="rtl"] .row > .col-sm-9,
+  html[dir="rtl"] .row > .col-sm-10,
+  html[dir="rtl"] .row > .col-sm-11,
+  html[dir="rtl"] .row > .col-sm-12 {
+    float: right;
+  }
+}
+@media (min-width: 992px) {
+  html[dir="rtl"] .row > .col-md-1,
+  html[dir="rtl"] .row > .col-md-2,
+  html[dir="rtl"] .row > .col-md-3,
+  html[dir="rtl"] .row > .col-md-4,
+  html[dir="rtl"] .row > .col-md-5,
+  html[dir="rtl"] .row > .col-md-6,
+  html[dir="rtl"] .row > .col-md-7,
+  html[dir="rtl"] .row > .col-md-8,
+  html[dir="rtl"] .row > .col-md-9,
+  html[dir="rtl"] .row > .col-md-10,
+  html[dir="rtl"] .row > .col-md-11,
+  html[dir="rtl"] .row > .col-md-12 {
+    float: right;
+  }
+}
+@media (min-width: 1170px) {
+  html[dir="rtl"] .row > .col-lg-1,
+  html[dir="rtl"] .row > .col-lg-2,
+  html[dir="rtl"] .row > .col-lg-3,
+  html[dir="rtl"] .row > .col-lg-4,
+  html[dir="rtl"] .row > .col-lg-5,
+  html[dir="rtl"] .row > .col-lg-6,
+  html[dir="rtl"] .row > .col-lg-7,
+  html[dir="rtl"] .row > .col-lg-8,
+  html[dir="rtl"] .row > .col-lg-9,
+  html[dir="rtl"] .row > .col-lg-10,
+  html[dir="rtl"] .row > .col-lg-11,
+  html[dir="rtl"] .row > .col-lg-12 {
+    float: right;
+  }
+}
+
+.navBarCss {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 90px;
+  background-image: url("assets/images/HeaderSignUp_EN.png");
+}
+
+.navBarArbCss {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 90px;
+  background-image: url("assets/images/HeaderSignUp_AR.png");
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.navBarHCss {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+  height: 90px;
+  background-image: url("assets/images/HeaderRegistration_EN.png");
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.navBarArbHCss {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+  height: 90px;
+  background-image: url("assets/images/HeaderRegistration_AR.png");
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.navTitle {
+  width: 100%;
+  position: relative;
+}
+
+.NavcardLeft {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.navIcon {
+  position: relative;
+  bottom: 9px;
+  right: 3px;
+}
+
+.NavcardRight {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+
+.navImage {
+  position: relative;
+  bottom: 10px;
+  right: 6px;
+}
+
+.navTwo {
+  margin-top: 70px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.txtCssActive {
+  font-family: SSTArabic-Medium;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #13614c;
+  margin-left: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.viewCss {
+  display: inline-flex;
+  color: gray;
+}
+
+.viewCssActive {
+  display: inline-flex;
+}
+
+.cardCss {
+  height: 69px;
+  width: 69px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.cardCssActive {
+  height: 69px;
+  width: 69px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.checkBoxCss {
+  margin-right: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px 5px 0px 5px;
+  margin-left: 10px;
+}
+
+.checkboxAckCss {
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+
+.btnCss {
+  font-family: SSTArabic-Medium;
+  color: white;
+  font-size: 16px;
+  border-radius: 9px;
+  background-color: #d2a02a;
+}
+
+.btnTCss {
+  font-family: SSTArabic-Medium;
+  color: #d2a02a;
+  font-size: 16px;
+  border-radius: 14px;
+  border: solid 1px #d2a02a;
+  background-color: transparent;
+}
+
+.btnGCss {
+  font-family: SSTArabic-Medium;
+  color: white;
+  font-size: 16px;
+  border-radius: 9px;
+  background-color: #13614c;
+}
+.mat-radio-outer-circle {
+  border-color: rgb(210, 160, 42) !important;
+}
+.btnArbCss {
+  font-family: SSTArabic-Medium;
+  float: right;
+  color: white;
+  font-size: 16px;
+  border-radius: 9px;
+  background-color: #d2a02a;
+}
+
+.headerImg {
+  position: relative;
+  bottom: 10px;
+  right: 6px;
+}
+.headerArbImg {
+  position: relative;
+  bottom: 10px;
+  right: 7px;
+}
+
+.headerIcon {
+  position: relative;
+  bottom: 9px;
+  right: 3px;
+}
+
+.headerArbIcon {
+  position: relative;
+  bottom: 9px;
+  right: -3px;
+}
+
+.checkBoxinside {
+  margin-left: 5px;
+}
+
+.titleCssS {
+  font-family: SSTArabic-Light;
+  position: relative;
+  right: 10px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.96;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 10px;
+  font-size: 26px;
+}
+
+.mat-form-field {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.navIconEngCss {
+  cursor: pointer;
+  font-size: 12px;
+  color: white;
+}
+
+.navIconArbCss {
+  cursor: pointer;
+  color: white;
+  text-align: right;
+}
+
+@media (min-width: 766px) {
+  .hrEngcss {
+    width: 45%;
+    float: right;
+    position: relative;
+    bottom: 96px;
+    right: -25px;
+  }
+  .hrEngcssActive {
+    width: 45%;
+    float: right;
+    position: relative;
+    bottom: 91px;
+    right: -25px;
+  }
+  .hrCss {
+    width: 36%;
+    float: left;
+    position: relative;
+    bottom: 96px;
+    right: 6px;
+  }
+  .hrCssActive {
+    width: 36%;
+    float: left;
+    position: relative;
+    bottom: 92px;
+    right: 6px;
+  }
+  .hrCss2 {
+    width: 88%;
+    float: left;
+    position: relative;
+    bottom: 96px;
+    right: 168px;
+  }
+  .hrCss3 {
+    width: 88%;
+    float: right;
+    position: relative;
+    bottom: 129px;
+    left: 166px;
+  }
+  .hrCss2Active {
+    width: 41%;
+    float: left;
+    position: relative;
+    bottom: 90px;
+    right: 5px;
+  }
+  .hrCss3Active {
+    width: 45%;
+    float: right;
+    position: relative;
+    bottom: 90px;
+    left: 25px;
+  }
+  .hrCss4 {
+    width: 45%;
+    float: right;
+    position: relative;
+    bottom: 96px;
+    left: 24px;
+  }
+  .hrEngCss4 {
+    width: 40%;
+    float: left;
+    position: relative;
+    bottom: 96px;
+    left: -6px;
+  }
+
+  .hrCsss4 {
+    width: 50%;
+    float: right;
+    position: relative;
+    bottom: 86px;
+    left: 24px;
+  }
+  .hrEngCsss4 {
+    width: 40%;
+    float: left;
+    position: relative;
+    bottom: 91px;
+    left: -5px;
+  }
+  .registerCrd1 {
+    background-image: url("assets/images/3@2x.png");
+    width: 250px;
+    background-position: center !important;
+    height: 100px;
+    float: right;
+    cursor: pointer;
+  }
+  .registerCrd2 {
+    background-image: url("assets/images/4@2x.png");
+    width: 250px;
+    background-position: center !important;
+    height: 100px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 765px) {
+  .hrCss {
+    display: none;
+    background: red;
+  }
+  .hrCss2 {
+    display: none;
+  }
+
+  .hrCss3 {
+    display: none;
+  }
+  .hrCss4 {
+    display: none;
+  }
+  .hrEngCss4 {
+    display: none;
+  }
+  .hrEngcss {
+    display: none;
+  }
+  .registerCrd1 {
+    background-image: url("assets/images/3@2x.png") !important;
+    width: 250px;
+    background-position: center !important;
+    height: 100px;
+  }
+  .registerCrd2 {
+    background-image: url("assets/images/4@2x.png") !important;
+    width: 250px;
+    background-position: center !important;
+    height: 100px;
+  }
+}
+
+.txtCss {
+  font-family: SSTArabic-Bold;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d2a02a;
+  margin-left: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.txtCssActive {
+  font-family: SSTArabic-Bold;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #13614c;
+  margin-left: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.viewCss {
+  display: inline-flex;
+  color: gray;
+}
+
+.viewCssActive {
+  display: inline-flex;
+}
+
+.mat-calendar-content {
+  padding: 0 8px 8px 8px;
+  outline: none;
+  overflow: auto !important;
+}
+
+.mat-datepicker-content .mat-calendar {
+  width: 400px !important;
+  height: 466px;
+  display: inline !important;
+  z-index: 10 !important;
+}
+
+.registerLabelCss {
+  font-family: SSTArabic-Light;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: start;
+  color: #6f6f6e;
+  position: relative;
+  top: 10px;
+}
+.registerLabel2Css {
+  font-family: SSTArabic-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: start;
+  color: black;
+}
+
+.registerLabel3Css {
+  font-family: SSTArabic-Light;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: start;
+  color: #6f6f6e;
+}
+
+.registerLabelnCss {
+  padding-left: 10px;
+  font-family: SSTArabic-Light;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #c0c0c0;
+}
+
+.registerLabel4Css {
+  font-family: SSTArabic-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: start;
+  color: #c0c0c0;
+}
+
+.registerBox {
+  border-radius: 5px;
+  border: dashed 1px #707070;
+  padding: 15px 10px 0px 10px;
+}
+
+.registerCrdTxt1 {
+  font-family: SSTArabic-Light;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: justify;
+}
+.registerCrdTxt2 {
+  font-family: SSTArabic-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #000000;
+  position: relative;
+  bottom: 15px;
+  text-align: justify;
+}
+
+.registerCrdTxt3 {
+  font-family: SSTArabic-Light;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: justify;
+}
+.registerCrdTxt4 {
+  position: relative;
+  bottom: 15px;
+  font-family: SSTArabic-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.radioCss {
+  display: flex;
+  font-size: 12px;
+  border: 1px solid #d2a02a;
+  padding: 7px 5px 0px 5px;
+  border-radius: 14px;
+  min-width: 175px;
+}
+
+.radioCardCss2 {
+  font-size: 16px;
+  border: 1px solid #d2a02a;
+  padding: 7px 5px 0px 5px;
+
+  min-width: 175px;
+  height: 36px;
+  border-radius: 14px;
+}
+
+.radioCardTxt2 {
+  font-family: SSTArabic-Medium;
+  text-align: center;
+  position: relative;
+  top: -37px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: black;
+}
+
+.radioCardCss {
+  font-size: 16px;
+  border: 1px solid #d2a02a;
+  padding: 7px 5px 0px 5px;
+  min-width: 175px;
+  height: 96px;
+  border-radius: 14px;
+  margin-left: 25px;
+}
+
+.radioCardCssArb {
+  font-size: 16px;
+  border: 1px solid #d2a02a;
+  padding: 7px 5px 0px 5px;
+  min-width: 175px;
+  height: 96px;
+  border-radius: 14px;
+  margin-right: 25px;
+}
+
+.radioCardTxt {
+  text-align: center;
+  font-family: SSTArabic-Medium;
+  position: relative;
+  top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: black;
+}
+
+.radioCss:hover {
+  font-size: 12px;
+
+  border: px solid #d2a02a;
+  padding: 7px 5px 0px 5px;
+  border-radius: 14px;
+  min-width: 175px;
+}
+
+.ackCard {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("assets/images/icon2.png") !important;
+  position: relative;
+  top: 6px;
+  left: -22px;
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 50% !important;
+  background-color: white !important;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d2a02a;
+}
+
+.txtHCss {
+  position: relative;
+  right: 15px;
+  top: 0px !important;
+}
+
+.fontCssAr1 {
+  cursor: pointer;
+  padding: 5px;
+  border-right: 1px solid;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.textCss2Ar {
+  position: relative;
+  right: 10px;
+}
+
+.fontCss {
+  padding: 5px;
+  border-right: 1px solid;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.fontCss1 {
+  cursor: pointer;
+  padding: 5px;
+  border-left: 1px solid;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.fontCssAr {
+  padding: 5px;
+  border-right: 1px solid;
+
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.fontCssAr2 {
+  padding: 5px;
+
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.list-group.list-group-root {
+  padding: 0;
+  overflow: hidden;
+}
+
+.list-group.list-group-root .list-group {
+  margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+  background: #2d624c;
+  color: white;
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+  border-top-width: 0;
+  background: #2d624c;
+  color: white;
+  font-weight: 500;
+  font-family: SSTArabic-Light !important;
+}
+
+.list-group.list-group-root > .list-group > .list-group-item {
+  padding-left: 30px;
+  background: #2d624c;
+  color: white;
+  font-weight: 500;
+  font-family: SSTArabic-Light !important;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group-item {
+  padding-left: 45px;
+}
+
+.list-group-item .glyphicon {
+  margin-right: 5px;
+}
+
+.chatIconCss {
+  width: 30px;
+  position: relative;
+  margin-top: 10px;
+  left: 10px;
+}
+
+.headerTitle {
+  font-family: SSTArabic-Bold;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: start;
+  color: #13614c;
+  position: relative;
+  bottom: 12px;
+}
+
+.chatIconArbCss {
+  width: 30px;
+  position: relative;
+  margin-top: 10px;
+  right: -10px;
+}

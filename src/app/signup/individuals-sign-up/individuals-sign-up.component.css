@@ -1,0 +1,149 @@
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+
+.numberCss {
+  width: 8.5px;
+  height: 8.5px;
+  border-radius: 50%;
+  background-color: #d2a02a;
+  font-size: 25px !important;
+  position: relative;
+  color: white;
+  top: -15px;
+  right: 4px;
+}
+.cardCss {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.cardCssActive {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.txtCss {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d2a02a;
+  margin-left: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.txtCssActive {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #13614c;
+  margin-left: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.viewCss {
+  display: inline-flex;
+  color: gray;
+}
+
+.viewCssActive {
+  display: inline-flex;
+}
+
+.mat-form-field {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.cardHeader {
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+}
+
+.ellipse {
+  width: 34.5px;
+  height: 34.5px;
+  border-radius: 50%;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+.ellipse-inner {
+  width: 8.5px;
+  height: 8.5px;
+  border-radius: 50%;
+  background-color: #d2a02a;
+}
+
+.lineCss {
+  width: 960px;
+  height: 540px;
+  background-color: #f5f5f5;
+}
+
+.pwdcss {
+  color: #00e695;
+  width: fit-content;
+}
+
+.checkCss {
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+
+.mainTitle {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #13614c;
+}
+
+.subTitle {
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: normal;
+  text-align: center;
+  color: #100f0f;
+}
+
+.btnCss {
+  color: white;
+  border-radius: 4.5px;
+  background-color: #d2a02a;
+}
+
+.btnArbCss {
+  float: right;
+  color: white;
+  border-radius: 4.5px;
+  background-color: #d2a02a;
+}

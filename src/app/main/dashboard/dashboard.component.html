@@ -1,0 +1,346 @@
+<!-- <iframe [src]='url' class="ifrmCss" ></iframe> -->
+<div class="container" style="margin-bottom: 30px;" *ngIf="!show" dir={{direction}}>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-12">
+        <div class="card cardz">
+          <!-- <div class="card-header titleCss">
+            <p>{{lang.title}}</p>
+          </div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div [ngClass]="direction === 'rtl' ? 'sideHeadingArb' : 'sideHeading'">
+                <span style="margin-left: 10px;"> {{lang.title}}</span>
+  
+              </div>
+            </div>
+          </div>
+          <p class="Rectangle-12"></p>
+          <div class="card-body">
+  
+  
+            <div class="row text-center">
+  
+              <ng-container *ngFor="let item of htmlStr?.menu; let i= index">
+  
+                <div class="col-md-3 text-center" (click)="open(item)" *ngIf="i <=2"
+                  [ngClass]="direction === 'rtl' ? 'sidelinesArb' : 'sidelines'">
+                  <div style=" cursor: pointer;
+              padding: 10px;
+              margin: 5px 5px 5px 5px;">
+                    <p>
+                      <!-- <i class={{item.icon}} style="font-size: 30px;"></i> -->
+                      <img src={{item.icon}} width="60px" alt="Logo">
+                    </p>
+                    <span class="subTitleCss" *ngIf="direction === 'ltr'">{{item.title}} </span>
+                    <span class="subTitleCss" *ngIf="direction === 'rtl'">{{item.t2}} </span>
+  
+  
+                  </div>
+  
+                </div>
+              </ng-container>
+  
+  
+              <div class="col-md-3" style="text-align: -webkit-center;">
+                <div class="dashboradPlus" data-toggle="modal" data-target="#myModal">
+                  <i class="fa fa-plus" style="font-size: 30px;
+                  position: relative; color: #c0c0c0;
+                  top: 25px" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+        <!-- <div class="jumbotron">
+                 <div class="row text-center mb-5">
+                     <div class="col-md-2">
+                      <div class="card cardz" style="border-radius:50%;width: 70px;">
+                 
+                        <div class="card-body">
+                          <i class="fa fa-arrow-left" style="font-size: 25px;" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                     </div>
+                     <div class="col-md-8">
+                      
+                     </div>
+                     <div class="col-md-2">
+                      <div class="card cardz" style="border-radius:50%;width: 70px;">
+                 
+                        <div class="card-body">
+                          <i class="fa fa-profi" style="font-size: 25px;" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                     </div>
+                 </div>
+                 <div appUiDirective></div>
+                 <h1>Create New Account </h1>
+                 <p>Select Type of Entity</p>
+                 
+               </div> -->
+      </div>
+    </div>
+  
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="card cardz">
+          <!-- <div class="card-header titleCss">{{lang.title2}}</div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div [ngClass]="direction === 'rtl' ? 'sideHeadingArb' : 'sideHeading'">
+                <span style="margin-left: 10px;"> {{lang.title2}}</span>
+  
+              </div>
+            </div>
+          </div>
+          <p class="Rectangle-12"></p>
+          <div class="card-body">
+  
+            <div class="chart-wrapper">
+              <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [colors]="lineChartColors"
+                [chartType]="doughnutChartType">
+              </canvas>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card cardz">
+          <!-- <div class="card-header titleCss">{{lang.title3}}</div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div [ngClass]="direction === 'rtl' ? 'sideHeadingArb' : 'sideHeading'">
+                <span style="margin-left: 10px;"> {{lang.title3}}</span>
+  
+              </div>
+            </div>
+          </div>
+          <p class="Rectangle-12"></p>
+          <div class="card-body">
+  
+            <div class="chart-wrapper">
+              <canvas baseChart [data]="doughnutChartData1" [labels]="doughnutChartLabels1" [colors]="lineChartColors1"
+                [chartType]="doughnutChartType">
+              </canvas>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card cardz">
+          <!-- <div class="card-header titleCss">{{lang.title4}}</div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div [ngClass]="direction === 'rtl' ? 'sideHeadingArb' : 'sideHeading'">
+                <span style="margin-left: 10px;"> {{lang.title4}}</span>
+  
+              </div>
+            </div>
+          </div>
+          <p class="Rectangle-12"></p>
+  
+          <div class="card-body" style="border-bottom: 1px solid #dfdfdf; height: 85px;"
+            [style.text-align]="direction === 'rtl'? 'right': 'left'" *ngFor="let item of taxPayer">
+  
+            <img src={{item.icon}} style="width: 45px;" alt="Logo">
+            <span class="taxPayCss" *ngIf="direction === 'ltr'" style="margin-right:0px">{{item.title}}</span>
+            <span class="taxPayCss" *ngIf="direction === 'rtl'" style="margin-right:10px">{{item.title1}}</span>
+          </div>
+  
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card cardz">
+          <!-- <div class="card-header titleCss">{{lang.title6}}</div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div [ngClass]="direction === 'rtl' ? 'sideHeadingArb' : 'sideHeading'">
+                <span style="margin-left: 10px;"> {{lang.title6}}</span>
+  
+              </div>
+            </div>
+          </div>
+          <p class="Rectangle-12"></p>
+          <div class="card-body" style="border-bottom: 1px solid #dfdfdf;height: 85px;"
+            [style.text-align]="direction === 'rtl'? 'right': 'left'" *ngFor="let item of inbox">
+            <div class="row">
+              <div class="col-md-1 text-center">
+                <div class="inboxCss5"></div>
+              </div>
+              <div class="col-md-8">
+                <div class="inboxCss" *ngIf="direction === 'ltr'">{{item.t1}}</div>
+                <div class="inboxCss2" *ngIf="direction === 'ltr'">{{item.t2}}</div>
+                <div class="inboxCss" *ngIf="direction === 'rtl'">{{item.t4}}</div>
+                <div class="inboxCss2" *ngIf="direction === 'rtl'">{{item.t5}}</div>
+              </div>
+              <div class="col-md-3 inboxCss3">
+                {{item.t3}}
+              </div>
+              <!-- <div class="col-md-2 inboxCss4">
+                <i class={{item.icon}} aria-hidden="true"></i>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card cardz">
+          <!-- <div class="card-header titleCss">{{lang.title7}}</div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div [ngClass]="direction === 'rtl' ? 'sideHeadingArb' : 'sideHeading'">
+                <span style="margin-left: 10px;"> {{lang.title7}}</span>
+  
+              </div>
+            </div>
+          </div>
+          <p class="Rectangle-12"></p>
+          <mat-calendar></mat-calendar>
+          <div class="card-body" style="border-top: 1px solid #dfdfdf;">
+            <div class="row text-center">
+              <div class="col-md-12">
+                <p class="calender" *ngIf="direction === 'ltr'">There is no upcoming commitments</p>
+                <p class="calender" *ngIf="direction === 'rtl'">لاتوجد إلتزامات قادمة</p>
+              </div>
+            </div>
+            <!-- <img src={{item.icon}} style="width: 23px;" alt="Logo">  *ngFor="let item of taxPayer"<span class="taxPayCss">{{item.title}}</span> -->
+          </div>
+  
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card cardz">
+          <!-- <div class="card-header titleCss">{{lang.title5}}</div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div [ngClass]="direction === 'rtl' ? 'sideHeadingArb' : 'sideHeading'">
+                <span style="margin-left: 10px;"> {{lang.title5}}</span>
+  
+              </div>
+            </div>
+          </div>
+          <p class="Rectangle-12"></p>
+          <div class="card-body">
+            <div class="row text-center">
+              <div class="col-md-4" *ngFor="let item of help; let i=index">
+                <div style=" cursor: pointer;
+              padding: 10px;
+              margin: 5px 5px 5px 5px;
+            " [style.border-right]="i === 1? '1px solid #f5f5f5': 'none'"
+                  [style.border-left]="i === 1? '1px solid #f5f5f5': 'none'">
+                  <p>
+                    <img src={{item.icon}} width="60px" alt="Logo">
+                  </p>
+                  <span class="subTitleCss" *ngIf="direction === 'rtl'">{{item.t2}} </span>
+                  <span class="subTitleCss" *ngIf="direction === 'ltr'">{{item.title}} </span>
+  
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+
+
+
+  
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog  modal-lg">
+      <div class="modal-content">
+          
+        <div class="modal-header" style="height: 50px;">
+          <span class="headerTitle">Quick Action</span>
+          <button type="button" class="close" data-dismiss="modal" style="position: relative;
+          bottom: 8px;">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="headerTitle2">Please choose the quick actions you want to enable</p>
+            </div>
+          </div>
+          <div class="row mt-2 mb-2 ml-2 mr-2">
+            <div class="col-md-4 mt-2 mb-2" *ngFor="let item of movies">
+              <div class="card cardz " [ngClass]="item.flag ? 'radioCardCssActive' : 'radioCardCss'">
+                <div class="card-body">
+                  <div style="float: right;">
+                    <!-- <input type="checkbox" [(ngModel)]="item.flag" name="lag" class="form-check-input" value=""> -->
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input type="checkbox" class="custom-control-input" id="customCheck" [(ngModel)]="item.flag"
+                        name="lag">
+                      <label class="custom-control-label" for="customCheck"></label>
+                    </div>
+                  </div>
+  
+                  <div [ngClass]="item.flag ? 'radioCardTxtActive' : 'radioCardTxt'">
+                    <div>
+                      <img src={{item.icon2}} alt="Logo">
+                    </div>
+                    <span class="subTitleCss" *ngIf="direction === 'ltr'" [style.color]="item.flag? 'white': '#13614c'">{{item.title}} </span>
+                    <span class="subTitleCss" *ngIf="direction === 'rtl'" [style.color]="item.flag? 'white': '#13614c'">{{item.t2}} </span>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button class="btn btnCss">Save</button>
+            </div>
+          </div>
+          <!-- <div cdkDropList class="example-list mt-20" (cdkDropListDropped)="drop($event)">
+            <div *ngFor="let item of movies, index as i" cdkDrag>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card cardz">
+  
+                    <div class="card-body" style="display: flex;">
+  
+  
+                      <div class="drag-index mr-2">{{i+1}}</div>
+                      <div class="w-10 drag-icon">
+                        <i class="fa fa-bars" cdkDragHandle></i>
+                      </div>
+  
+                      <div class="form-check w-100 drag-content">
+                        <label class="form-check-label">
+                          {{item.title}}
+                        </label>
+                      </div>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+  
+  
+  
+          </div> -->
+        </div>
+  
+      </div>
+    </div>
+  </div>

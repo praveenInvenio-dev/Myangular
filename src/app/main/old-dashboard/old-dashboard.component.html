@@ -1,0 +1,73 @@
+<!-- <nav class="navbar navbar-expand-sm  navbar-dark  fixed-top "
+    [ngClass]="direction === 'rtl' ? 'navBarArbHCss' : 'navBarHCss'">
+
+    <div [ngClass]="direction === 'rtl' ? 'alignright' : 'alignleft'">
+        <span class="navIconEngCss" *ngIf="direction === 'ltr'" [routerLink]="['/main']"> <i class="fa fa-arrow-left"
+                style="font-size: 12px;" aria-hidden="true"></i> Back</span>
+        <div class="navIconArbCss" *ngIf="direction === 'rtl'" [routerLink]="['/home']"><i class="fa fa-arrow-right"
+                style="font-size: 12px;    font-size: 12px;
+          float: right;
+          position: relative;
+          top: 10px;
+          margin-right: 10px;" aria-hidden="true"></i> رجوع </div>
+        <p class="titleCssS">
+            {{title}}
+        </p>
+
+    </div>
+
+    <div class="collapse navbar-collapse">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            </li>
+            <li class="nav-item">
+            </li>
+        </ul>
+        <span class="form-inline my-2 my-lg-0">
+
+            <span [ngClass]="direction === 'rtl' ? 'fontCssAr' : 'fontCss'"
+                [style.border-right]="direction === 'rtl'? 'none': '1px solid white' ">
+                <img src="assets/images/email.png" class="txtHCss" style="width: 30px;" alt="Logo">
+            </span>
+            <span [ngClass]="direction === 'rtl' ? 'fontCssAr' : 'fontCss'">
+                <img src="assets/images/notify.png" class="txtHCss" style="width: 30px;" alt="Logo">
+                <span style="width: 20px;
+              height: 20px;background: #d2a02a;"></span>
+            </span>
+
+            <span [ngClass]="direction === 'rtl' ? 'fontCssAr' : 'fontCss'"
+                [style.border-right]="direction === 'ltr'? 'none': '1px solid white' ">
+                <span *ngIf="direction === 'rtl'"> أحمد محمد </span> <span *ngIf="direction === 'ltr'"> Ahmad
+                    Muhammed</span>
+            </span>
+
+            <span style="font-size: 20px">
+                <div class="dropdown ml-2">
+                    <a style="    font-size: 20px;
+  color:white;cursor: pointer" data-toggle="dropdown">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                    <div class="dropdown-menu" style="position: absolute;
+      left: -120px;">
+                        <a class="dropdown-item">logout</a>
+
+                    </div>
+                </div>
+            </span>
+            <span [ngClass]="direction === 'rtl' ? 'fontCssAr1' : 'fontCss1'">
+                <span *ngIf="direction === 'rtl'" style="margin-right: 15px;
+            margin-left: 15px;"> القائمة </span> <span *ngIf="direction === 'ltr'" style="margin-right: 15px;
+            margin-left: 15px;"> Menu</span>
+                <i class="fa fa-bars " [ngClass]="direction === 'rtl' ? 'textCss2Ar' : 'textCss2'"
+                    aria-hidden="true"></i>
+            </span>
+        </span>
+    </div>
+
+</nav> -->
+<div class="row">
+    <div class="col-md-12">
+        <iframe [src]="url" class="ifrmCss"></iframe>
+    </div>
+</div>
